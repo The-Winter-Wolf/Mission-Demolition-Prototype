@@ -72,6 +72,12 @@ public class MissionDemolition : MonoBehaviour
 
     void Update()
     {
+        // Выйти из приложения
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+
         UpdateGUI();
 
         // Проверить завершение уровня
